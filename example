@@ -1,0 +1,410 @@
+// //road
+// gltfLoader.load(
+//   // "/models/airport (1)/scene.gltf",
+
+//   (gltf) => {
+//     console.log(gltf);
+//     gltf.scene.scale.set(0.5, 0.1, 0.05);
+//     gltf.scene.position.set(554, 0.3, 45);
+//     // gltf.scene.rotation.y= Math.PI
+//     scene.add(gltf.scene);
+//     //gui.add(gltf.scene.rotation,'y').min(-Math.PI).max(Math.PI).step(0.001).name('Rotation')
+//   }
+// );
+
+// //plane Model
+// const loader = new GLTFLoader();
+// var PlaneModel;
+// loader.load(
+//   "/models/boeing_737-800/scene.gltf",
+//   function (gltf) {
+//     PlaneModel = gltf.scene;
+//     PlaneModel.scale.set(0.1, 0.1, 0.1);
+//     PlaneModel.position.set(20, 2.8, 30);
+//     PlaneModel.rotation.y = Math.PI * 0.5;
+//     scene.add(PlaneModel);
+//   },
+//   undefined,
+//   function (error) {
+//     console.error(error);
+//   }
+// );
+
+// //5
+  // " models/scene.glb"," models/scene.glb"," models/scene.glb"," models/scene.glb"," models/scene.glb",
+  // //10
+  // " models/scene.glb"," models/scene.glb"," models/scene.glb"," models/scene.glb"," models/scene.glb",
+  // //15
+  // " models/scene.glb"," models/scene.glb"," models/scene.glb"," models/scene.glb"," models/scene.glb",
+  // //20
+  // " models/scene.glb"," models/scene.glb"," models/scene.glb"," models/scene.glb"," models/scene.glb",
+  // //25
+  // " models/scene.glb"," models/scene.glb"," models/scene.glb"," models/scene.glb"," models/scene.glb",
+  // //30
+  // " models/scene.glb"," models/scene.glb"," models/scene.glb"," models/scene.glb"," models/scene.glb",
+  // //35
+  // " models/scene.glb"," models/scene.glb"," models/scene.glb"," models/scene.glb"," models/scene.glb",
+  // //40
+  // " models/scene.glb"," models/scene.glb"," models/scene.glb"," models/scene.glb"," models/scene.glb",
+  // //10
+  // { x: 0, y: 0, z: 0 },
+  // { x: 50, y: 0, z: 0 },
+  // { x: 100, y: 0, z: 0 },
+  // { x: 150, y: 0, z: 0 },
+  // { x: 200, y: 0, z: 0 },
+  
+  // { x: -50, y: 0, z: 0 },
+  // { x: -100, y: 0, z: 0 },
+  // { x: -150, y: 0, z: 0 },
+  // { x: -200, y: 0, z: 0 },
+  // { x: -250, y: 0, z: 0 },
+  // //20
+  // { x: 0, y: 0, z: 50 },
+  // { x: 50, y: 0, z: 50 },
+  // { x: -50, y: 0, z: 50 },
+  // { x: 100, y: 0, z: 50 },
+  // { x: -100, y: 0, z: 50 },
+
+  // { x: 0, y: 0, z: -50 },
+  // { x: 50, y: 0, z: -50 },
+  // { x: -50, y: 0, z: -50 },
+  // { x: 100, y: 0, z: -50 },
+  // { x: -100, y: 0, z: -50 },
+  // //30
+  // { x: 0, y: 0, z: 100 },
+  // { x: 50, y: 0, z: 100 },
+  // { x: -50, y: 0, z: 100 },
+  // { x: 100, y: 0, z: 100 },
+  // { x: -100, y: 0, z: 100 },
+
+  // { x: 0, y: 0, z: -100 },
+  // { x: 50, y: 0, z: -100 },
+  // { x: -50, y: 0, z: -100 },
+  // { x: 100, y: 0, z: -100 },
+  // { x: -100, y: 0, z: -100 },
+  // //40
+  // { x: 0, y: 0, z: 150 },
+  // { x: 50, y: 0, z: 150 },
+  // { x: -50, y: 0, z: 150 },
+  // { x: 100, y: 0, z: 150 },
+  // { x: -100, y: 0, z: 150 },
+
+  // { x: 0, y: 0, z: -100 },
+  // { x: 50, y: 0, z: -100 },
+  // { x: -50, y: 0, z: -100 },
+  // { x: 100, y: 0, z: -100 },
+  // { x: -100, y: 0, z: -100 },
+  // //10
+  // { x: 0, y: Math.PI * 1.0, z: 0 },
+  // { x: 0, y: Math.PI * 1.0, z: 0 },
+  // { x: 0, y: Math.PI * 1.0, z: 0 },
+  // { x: 0, y: Math.PI * 1.0, z: 0 },
+  // { x: 0, y: Math.PI * 1.0, z: 0 },
+  
+  // { x: 0, y: Math.PI * 1.0, z: 0 },
+  // { x: 0, y: Math.PI * 1.0, z: 0 },
+  // { x: 0, y: Math.PI * 1.0, z: 0 },
+  // { x: 0, y: Math.PI * 1.0, z: 0 },
+  // { x: 0, y: Math.PI * 1.0, z: 0 },
+  // //20
+  // { x: 0, y: Math.PI * 1.0, z: 0 },
+  // { x: 0, y: Math.PI * 1.0, z: 0 },
+  // { x: 0, y: Math.PI * 1.0, z: 0 },
+  // { x: 0, y: Math.PI * 1.0, z: 0 },
+  // { x: 0, y: Math.PI * 1.0, z: 0 },
+  
+  // { x: 0, y: Math.PI * 1.0, z: 0 },
+  // { x: 0, y: Math.PI * 1.0, z: 0 },
+  // { x: 0, y: Math.PI * 1.0, z: 0 },
+  // { x: 0, y: Math.PI * 1.0, z: 0 },
+  // { x: 0, y: Math.PI * 1.0, z: 0 },
+  // //30
+  // { x: 0, y: Math.PI * 1.0, z: 0 },
+  // { x: 0, y: Math.PI * 1.0, z: 0 },
+  // { x: 0, y: Math.PI * 1.0, z: 0 },
+  // { x: 0, y: Math.PI * 1.0, z: 0 },
+  // { x: 0, y: Math.PI * 1.0, z: 0 },
+  
+  // { x: 0, y: Math.PI * 1.0, z: 0 },
+  // { x: 0, y: Math.PI * 1.0, z: 0 },
+  // { x: 0, y: Math.PI * 1.0, z: 0 },
+  // { x: 0, y: Math.PI * 1.0, z: 0 },
+  // { x: 0, y: Math.PI * 1.0, z: 0 },
+  // //40
+  // { x: 0, y: Math.PI * 1.0, z: 0 },
+  // { x: 0, y: Math.PI * 1.0, z: 0 },
+  // { x: 0, y: Math.PI * 1.0, z: 0 },
+  // { x: 0, y: Math.PI * 1.0, z: 0 },
+  // { x: 0, y: Math.PI * 1.0, z: 0 },
+  
+  // { x: 0, y: Math.PI * 1.0, z: 0 },
+  // { x: 0, y: Math.PI * 1.0, z: 0 },
+  // { x: 0, y: Math.PI * 1.0, z: 0 },
+  // { x: 0, y: Math.PI * 1.0, z: 0 },
+  // { x: 0, y: Math.PI * 1.0, z: 0 },
+  // //10
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // //20
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // //30
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // //40
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // //50
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // //60
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // //70
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // //80
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // //90
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // //100
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // //110
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // //120
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // //130
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // //140
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // //150
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // //160
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  // { x: 1, y: 1, z: 1 },
+  ////////////////////////////////////////////
+
+  //////////////////////////////// OLD SEA  ////////////////////////////////////////////
+  // loader.load(
+//   "models/scene.glb",
+//   function (gltf) {
+//     var originalModel = gltf.scene.children[0];
+    
+//     for (var i = 0; i < 50; i++) {
+//       for (var j = 0; j < 50; j++) {
+//         var newModel = originalModel.clone();
+//         newModel.position.set(i * 50, -4, j * 50); // Use both i and j to set position
+//         scene.add(newModel);
+//       }
+//     }
+//     for (var i = 0; i < 50; i++) {
+//       for (var j = 0; j < 50; j++) {
+//         var newModel = originalModel.clone();
+//         newModel.position.set(i * -50, -4, j * -50); // Use both i and j to set position
+//         scene.add(newModel);
+//       }
+//     }
+//     for (var i = 0; i < 50; i++) {
+//       for (var j = 0; j < 50; j++) {
+//         var newModel = originalModel.clone();
+//         newModel.position.set(i * 50, -4, j * -50); // Use both i and j to set position
+//         scene.add(newModel);
+//       }
+//     }
+//     for (var i = 0; i < 50; i++) {
+//       for (var j = 0; j < 50; j++) {
+//         var newModel = originalModel.clone();
+//         newModel.position.set(i * -50, -4, j * 50); // Use both i and j to set position
+//         scene.add(newModel);
+//       }
+//     }
+//   }
+// );
+// loader.load(
+//   "models/scene.glb",
+//   function (gltf) {
+//     var originalModel = gltf.scene.children[0];
+    
+//     for (var i = 0; i < 50; i++) {
+//       for (var j = 0; j < 50; j++) {
+//         var newModel = originalModel.clone();
+//         newModel.position.set(i * 50, -400, j * 50); // Use both i and j to set position
+//         scene.add(newModel);
+//       }
+//     }
+//     for (var i = 0; i < 50; i++) {
+//       for (var j = 0; j < 50; j++) {
+//         var newModel = originalModel.clone();
+//         newModel.position.set(i * -50, -400, j * -50); // Use both i and j to set position
+//         scene.add(newModel);
+//       }
+//     }
+//     for (var i = 0; i < 50; i++) {
+//       for (var j = 0; j < 50; j++) {
+//         var newModel = originalModel.clone();
+//         newModel.position.set(i * 50, -400, j * -50); // Use both i and j to set position
+//         scene.add(newModel);
+//       }
+//     }
+//     for (var i = 0; i < 50; i++) {
+//       for (var j = 0; j < 50; j++) {
+//         var newModel = originalModel.clone();
+//         newModel.position.set(i * -50, -400, j * 50); // Use both i and j to set position
+//         scene.add(newModel);
+//       }
+//     }
+//   }
+// );
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
